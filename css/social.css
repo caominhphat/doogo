@@ -1,0 +1,157 @@
+.div-nut {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px !important;
+	position: fixed;
+	z-index: 2147483647;
+	bottom: 24px;
+	right: 0px;
+	padding-right: 5px;
+}
+
+.div-nut > a {
+	display: inline-block;
+	overflow: visible !important;
+	width: 54px !important;
+	height: 54px !important;
+	margin: 6px !important;
+	background-size: 100% !important;
+	border: 2px solid #fff !important;
+	border-radius: 50% !important;
+	margin: 8px;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto;
+	cursor: pointer;
+	position: relative;
+}
+
+.div-nut .nut-action:hover .tooltext {
+	visibility: visible;
+	opacity: 1;
+}
+
+.div-nut:hover .nut-action {
+	text-decoration: none !important;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15), 0 4px 15px rgba(0, 0, 0, 0.13);
+}
+
+.div-nut .tooltext {
+	visibility: hidden;
+	font-size: 12px !important;
+	line-height: 16px !important;
+	text-align: center;
+	white-space: nowrap;
+	border-radius: 4px;
+	padding: 8px;
+	position: absolute;
+	top: calc(50% - 16px);
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.5s;
+	right: 120%;
+	background-color: #ffd115;
+	color: #fff;
+}
+
+.div-nut .nut-goi {
+	background-image: url("https://thietkewebchuyen.com/data/icon/wordpress/call.svg");
+}
+
+.div-nut .nut-zalo {
+	background-image: url("https://thietkewebchuyen.com/data/icon/wordpress/zalo.svg");
+}
+
+.div-nut .nut-face {
+	background-image: url("https://thietkewebchuyen.com/data/icon/wordpress/messenger.svg");
+}
+
+.div-nut .nut-top {
+	background-image: url("../images/back_to_top.png");
+}
+
+/*.social-button{*/
+  /*display: inline-grid;*/
+    /*position: fixed;*/
+    /*bottom: 15px;*/
+    /*right: 25px;*/
+    /*min-width: 45px;*/
+    /*text-align: center;*/
+    /*z-index: 99999;*/
+/*}*/
+/*.social-button-content{*/
+  /*display: inline-grid;   */
+/*}*/
+/*.social-button a {padding:8px 0;cursor: pointer;position: relative;}*/
+/*.social-button i{*/
+    /*width: 40px;*/
+    /*height: 40px;*/
+    /*background: #ffd115;*/
+    /*color: #fff;*/
+    /*border-radius: 100%;*/
+    /*font-size: 20px;*/
+    /*text-align: center;*/
+    /*line-height: 1.9;*/
+    /*position: relative;*/
+    /*z-index: 999;*/
+/*}*/
+/*.social-button i div{*/
+    /*width: 40px;*/
+    /*height: 40px;*/
+    /*background: #ffd115;*/
+    /*color: #fff;*/
+    /*border-radius: 100%;*/
+    /*font-size: 10px;*/
+    /*text-align: center;*/
+    /*padding-top: 10px;*/
+/*}*/
+/*.alo-circle {*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-duration: 1s;*/
+    /*animation-fill-mode: both;*/
+    /*animation-name: zoomIn;*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*top: 3px;*/
+    /*right: -3px;*/
+    /*position: absolute;*/
+    /*background-color: transparent;*/
+    /*-webkit-border-radius: 100%;*/
+    /*-moz-border-radius: 100%;*/
+    /*border-radius: 100%;*/
+    /*border: 2px solid rgba(30, 30, 30, 0.4);*/
+    /*opacity: .1;*/
+    /*border-color: #0089B9;*/
+    /*opacity: .5;*/
+/*}*/
+/*.alo-circle-fill {*/
+  /*animation-iteration-count: infinite;*/
+  /*animation-duration: 1s;*/
+  /*animation-fill-mode: both;*/
+  /*animation-name: pulse;*/
+    /*width: 60px;*/
+    /*height: 60px;*/
+    /*top: -2px;*/
+    /*right: -8px;*/
+    /*position: absolute;*/
+    /*-webkit-transition: all 0.2s ease-in-out;*/
+    /*-moz-transition: all 0.2s ease-in-out;*/
+    /*-ms-transition: all 0.2s ease-in-out;*/
+    /*-o-transition: all 0.2s ease-in-out;*/
+    /*transition: all 0.2s ease-in-out;*/
+    /*-webkit-border-radius: 100%;*/
+    /*-moz-border-radius: 100%;*/
+    /*border-radius: 100%;*/
+    /*border: 2px solid transparent;*/
+    /*background-color: rgba(0, 175, 242, 0.5);*/
+    /*opacity: .75;*/
+/*}*/
+/*@-webkit-keyframes "headerAnimation" {*/
+    /*0% { margin-top: -70px; }*/
+    /*100% { margin-top: 0; }*/
+/*}*/
+/*@keyframes "headerAnimation" {*/
+    /*0% { margin-top: -70px; }*/
+    /*100% { margin-top: 0; }*/
+/*}*/
