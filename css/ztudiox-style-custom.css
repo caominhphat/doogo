@@ -209,7 +209,7 @@ body.single-post .ztudiox-sidebar-style-none, body.blog .ztudiox-sidebar-style-n
 .ztudiox-body .ztudiox-top-bar a:hover{ color: #ffffff; } 
 .ztudiox-top-bar .ztudiox-top-bar-right-social a{ color: #ffffff; } 
 .ztudiox-top-bar .ztudiox-top-bar-right-social a:hover{ color: #ffd115; } 
-.ztudiox-header-background, .ztudiox-sticky-menu-placeholder, .ztudiox-header-style-boxed.ztudiox-fixed-navigation{ background-color: #0a0a0a; } 
+.ztudiox-header-background, .ztudiox-sticky-menu-placeholder, .ztudiox-header-style-boxed.ztudiox-fixed-navigation{ background-color: rgba(0, 0, 0, 0.5); }
 .ztudiox-header-wrap.ztudiox-header-style-plain{ border-color: #e8e8e8; } 
 .ztudiox-header-side-nav.ztudiox-style-side-toggle .ztudiox-logo{ background-color: #ffffff; } 
 .ztudiox-top-menu-button i, .ztudiox-mobile-menu-button i{ color: #ffffff; }.ztudiox-mobile-button-hamburger:before, .ztudiox-mobile-button-hamburger:after, .ztudiox-mobile-button-hamburger span{ background: #ffffff; } 
@@ -717,7 +717,7 @@ body .gdlr-core-port-info-item .gdlr-core-port-info-key {
 .ztudiox-item-mgb, .gdlr-core-item-mgb{ margin-bottom: 40px; }
 .gdlr-core-pbf-wrapper{min-height: 100px; !important;}
 .service-title {
-	font-size: 45px !important;
+	font-size: 35px !important;
 	font-weight: 700 !important;
 	letter-spacing: 4px !important;
 	color: #ffffff !important;
@@ -747,13 +747,14 @@ body .gdlr-core-port-info-item .gdlr-core-port-info-key {
 .slider-content-2 {
 	z-index: 6 !important;
 	white-space: nowrap !important;
-	font-size: 65px !important;
-	line-height: 120px !important;
+	font-size: 35px !important;
+	line-height: 100px !important;
 	font-weight: 700 !important;
 	color: #ffffff !important;
 	letter-spacing: 0px !important;
 	font-family:Montserrat !important;
 	text-transform:uppercase !important;
+	overflow-wrap: break-word !important;
 }
 
 .slider-content-3 {
@@ -809,17 +810,17 @@ body .gdlr-core-port-info-item .gdlr-core-port-info-key {
 	}
 
 	.slider-content-1 {
-		font-size: 15px !important;
+		font-size: 10px !important;
 		line-height: 20px !important;
 	}
 
 	.slider-content-2 {
-		font-size: 20px !important;
-		line-height: 40px !important;
+		font-size: 13px !important;
+		line-height: 20px !important;
 	}
 
 	.slider-content-3 {
-		font-size: 12px !important;
+		font-size: 10px !important;
 		line-height: 20px !important;
 	}
 }
