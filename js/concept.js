@@ -22,7 +22,7 @@
                         let concept = '<div class="mySlides fade-concept">' +
                             // '<div class="numbertext">' + (index + 1) + '/' + concepts.length + '</div>' +
                             '<img src="' + item.image_url + '" style="width:100%">' +
-                            '<div class="mySlideText" style="margin-top: 60px"><h4>' + item.name + '</h4><p>' + item.description + '</p></div>' +
+                            '<div class="mySlideText" style="margin-top: 60px"><span class="concept-title">' + item.name + '</span><p>' + item.description + '</p></div>' +
                             '</div>'
                         concept_content += concept
                     });
