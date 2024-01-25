@@ -831,6 +831,9 @@ body .gdlr-core-port-info-item .gdlr-core-port-info-key {
 	.concept-title {
 		font-size: 15px;
 	}
+	.owl-carousel .owl-stage {
+		height: 300px !important;
+	}
 }
 
 /*@media screen and (max-width: 1024px) {*/
@@ -853,3 +856,38 @@ body .gdlr-core-port-info-item .gdlr-core-port-info-key {
 /*		line-height: 30px ;*/
 /*	}*/
 /*}*/
+
+
+.owl-carousel .owl-stage {
+	height: 500px;
+}
+
+.owl-carousel .owl-item {
+	/*height: 100%;*/
+	background-color: white;
+}
+
+.owl-carousel .owl-item .item {
+	height: 100%;
+	background-color: white;
+}
+
+.owl-carousel .owl-item img {
+	height: 100% !important;
+	width: auto !important;
+	margin: 0 auto;
+	object-fit: cover;
+}
+
+.item{
+	position: relative;
+}
+.overlay{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: red;
+	opacity: 0.5;
+}

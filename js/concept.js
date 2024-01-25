@@ -17,28 +17,42 @@
                 if(data.status == 200 && data.data) {
                     concepts = data.data
 
-                    let concept_content = ""
+                    // let concept_content = ""
+                    // $.each(concepts, function (index, item) {
+                    //     let concept = '<div class=" item">' +
+                    //         // '<div class="numbertext">' + (index + 1) + '/' + concepts.length + '</div>' +
+                    //         '<img src="' + item.image_url + '">' +
+                    //         '<div class="mySlideText"><span class="concept-title">' + item.name + '</span><p>' + item.description + '</p></div>' +
+                    //         '</div>'
+                    //     concept_content += concept
+                    // });
+                    // // concept_content += '<a class="prev" onclick="plusSlides(-1)">❮</a>'
+                    // // concept_content += '<a class="next" onclick="plusSlides(1)">❯</a>'
+                    // $("#concept_content").html(concept_content);
+
+
+                    $('#concept_content').html('<div id="testing" class="owl-carousel owl-theme"></div>');
                     $.each(concepts, function (index, item) {
-                        let concept = '<div class="mySlides fade-concept">' +
+                        let concept = '<div class=" item">' +
                             // '<div class="numbertext">' + (index + 1) + '/' + concepts.length + '</div>' +
-                            '<img src="' + item.image_url + '" style="width:100%">' +
-                            '<div class="mySlideText" style="margin-top: 60px"><span class="concept-title">' + item.name + '</span><p>' + item.description + '</p></div>' +
+                            '<img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8MTkyMHgxMDgwfGVufDB8fDB8fHww">' +
+                            // '<img src="' + item.image_url + '">' +
+                            '<div class="mySlideText"><span class="concept-title">' + item.name + '</span><p>' + item.description + '</p></div>' +
                             '</div>'
-                        concept_content += concept
+                        //concept_content += concept
+                        $(".owl-carousel").append(concept);
                     });
-                    // concept_content += '<a class="prev" onclick="plusSlides(-1)">❮</a>'
-                    // concept_content += '<a class="next" onclick="plusSlides(1)">❯</a>'
-                    document.getElementById("concept_content").innerHTML = concept_content;
 
-                    let concept_slide_number = ""
-                    $.each(concepts, function (index, item) {
-                        concept_slide_number += '<span class="dot" onclick="currentSlide(' + index + ')"></span>'
+                    var owl = $("#testing");
+
+
+                    owl.owlCarousel({
+                        // loop:true,
+                        items:1,
+                        // autoplay:true,
+                        // autoplayTimeout:4000,
+                        dots:true,
                     });
-                    document.getElementById("concept_slide_number").innerHTML = concept_slide_number;
-
-                    showSlides(1)
-
-                    setInterval(function(){ showSlides(++slideIndex); }, 3000);
                 }
 
             },
@@ -48,32 +62,5 @@
         });
     }
 
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      n = parseInt(n)
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
 
 
