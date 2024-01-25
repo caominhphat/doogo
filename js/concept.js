@@ -1,4 +1,3 @@
-    // Dropdown on mouse hover
     $(document).ready(function () {
 
         // Get list concepts
@@ -17,20 +16,6 @@
                 if(data.status == 200 && data.data) {
                     concepts = data.data
 
-                    // let concept_content = ""
-                    // $.each(concepts, function (index, item) {
-                    //     let concept = '<div class=" item">' +
-                    //         // '<div class="numbertext">' + (index + 1) + '/' + concepts.length + '</div>' +
-                    //         '<img src="' + item.image_url + '">' +
-                    //         '<div class="mySlideText"><span class="concept-title">' + item.name + '</span><p>' + item.description + '</p></div>' +
-                    //         '</div>'
-                    //     concept_content += concept
-                    // });
-                    // // concept_content += '<a class="prev" onclick="plusSlides(-1)">❮</a>'
-                    // // concept_content += '<a class="next" onclick="plusSlides(1)">❯</a>'
-                    // $("#concept_content").html(concept_content);
-
-
                     $('#concept_content').html('<div id="testing" class="owl-carousel owl-theme"></div>');
                     $.each(concepts, function (index, item) {
                         let concept = '<div class=" item">' +
@@ -47,10 +32,10 @@
 
 
                     owl.owlCarousel({
-                        // loop:true,
+                        loop:true,
                         items:1,
-                        // autoplay:true,
-                        // autoplayTimeout:4000,
+                        autoplay:true,
+                        autoplayTimeout:2000,
                         dots:true,
                     });
                 }

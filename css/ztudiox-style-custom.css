@@ -834,6 +834,10 @@ body .gdlr-core-port-info-item .gdlr-core-port-info-key {
 	.owl-carousel .owl-stage {
 		height: 300px !important;
 	}
+
+	.owl-carousel .owl-stage .owl-item{
+		height: 300px !important;
+	}
 }
 
 /*@media screen and (max-width: 1024px) {*/
@@ -859,6 +863,9 @@ body .gdlr-core-port-info-item .gdlr-core-port-info-key {
 
 
 .owl-carousel .owl-stage {
+	height: 500px;
+}
+.owl-carousel .owl-stage .owl-item{
 	height: 500px;
 }
 
