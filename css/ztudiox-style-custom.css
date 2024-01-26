@@ -832,11 +832,11 @@ body .gdlr-core-port-info-item .gdlr-core-port-info-key {
 		font-size: 15px;
 	}
 	.owl-carousel .owl-stage {
-		height: 300px !important;
+		height: 400px !important;
 	}
 
 	.owl-carousel .owl-stage .owl-item{
-		height: 300px !important;
+		height: 400px !important;
 	}
 }
 
@@ -863,10 +863,10 @@ body .gdlr-core-port-info-item .gdlr-core-port-info-key {
 
 
 .owl-carousel .owl-stage {
-	height: 500px;
+	height: 600px;
 }
 .owl-carousel .owl-stage .owl-item{
-	height: 500px;
+	height: 600px;
 }
 
 .owl-carousel .owl-item {
@@ -875,11 +875,14 @@ body .gdlr-core-port-info-item .gdlr-core-port-info-key {
 }
 
 .owl-carousel .owl-item .item {
-	height: 100%;
+	text-align: center;
+	height: 80%;
 	background-color: white;
 }
 
 .owl-carousel .owl-item img {
+	font-family: "Montserrat";
+	color: black;
 	height: 100% !important;
 	width: auto !important;
 	margin: 0 auto;
